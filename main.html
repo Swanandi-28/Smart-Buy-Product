@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuyWise</title>
+    <link rel="stylesheet" href="sthle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">BuyWise</div>
+
+        <ul class="nav-links">
+            <li><a href="men.html">Men</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="kids.html">Kids</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <section class= "search-section">
+        <div class="search-container"> 
+            <input type="text" placeholder="Search for products, brands and more">
+            <select id="SelectCategory">
+            <option value=" ">Select category</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Accessories">Accessories</option>
+            <option value="Electronics">Electronics</option>
+             </select>
+            <button onclick="searchProducts()" id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+        </div>
+       
+    </section>
+        <div class="nav-icons">
+            <a href="profile.html" class="profile">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="hero-section"></div>
+    
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        <input type="text" placeholder="Your Name"> 
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button>Send Message</button>
+
+    </div>
+</body>
+</html>
