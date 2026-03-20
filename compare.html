@@ -1,77 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BuyWise</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuyWise — Compare</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
 
-<!-- NAVBAR -->
-
-<nav class="navbar">
-
-<div class="logo">BuyWise</div>
-
-<ul class="nav-links">
-<li><a href="./home.html">Home</a></li>
-<li><a href="./categories.html">Categories</a></li>
-<li><a href="./compare.html">Compare</a></li>
-<li><a href="./about.html">About</a></li>
-</ul>
-
-<div class="nav-icons">
-    <a href="./profile.html" class="Profile">
-        <i class="fa-solid fa-user"></i>
-        <span>Profile</span>
+  <nav class="navbar">
+    <div class="logo">BuyWise</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="categories.html">Categories</a></li>
+      <li><a href="compare.html">Compare</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <a href="profile.html" class="nav-profile">
+      <i class="fa-solid fa-user"></i>
+      <span>Profile</span>
     </a>
-    
-</div>
+  </nav>
 
-</nav>
-
-<section class="compare">
-    <h2>Compare Prices</h2>
-    <p>Type any product name and instantly compare prices, ratings & availability across stores.</p>
-
-    <div class="search-section">
-        <input type="text" id="compareInput" placeholder="e.g. iphone 17, Samsung Galaxy 24…">
-        <button><i class="fa fa-search"></i> Compare</button>
+  <section class="page-header">
+    <h1>Compare Prices</h1>
+    <p>Type any product name and instantly compare prices, ratings &amp; availability across stores.</p>
+    <div class="search-bar">
+      <input type="text" id="compareInput" placeholder="e.g. iPhone 17, Samsung Galaxy S24…">
+      <button><i class="fa fa-search"></i> Compare</button>
     </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">
+      <h3>BuyWise</h3>
+      <p>Smart Product Comparison</p>
+      <p>© 2024 BuyWise</p>
+    </div>
+    <div class="footer-social">
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-x-twitter"></i>
+    </div>
+  </footer>
 
-<footer>
-
-<div class="footer-left">
-
-<h3>BuyWise</h3>
-
-<p>Smart Product Comparison</p>
-
-<p>© 2024 BuyWise</p>
-
-</div>
-
-<div class="social">
-
-<i class="fab fa-twitter"></i>
-
-<i class="fab fa-facebook"></i>
-
-<i class="fab fa-x-twitter"></i>
-
-</div>
-
-</footer>
+  <script src="main.js"></script>
+  <script>
+    // Pre-fill search from query string (e.g. linked from hero)
+    const params = new URLSearchParams(location.search);
+    const q = params.get('q');
+    if (q) document.getElementById('compareInput').value = q;
+  </script>
 
 </body>
 </html>
-    
