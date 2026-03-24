@@ -28,23 +28,36 @@
     <p>Pick a category and find the best deals across top shopping platforms.</p>
   </section>
 
-  <section class="categories-section">
-    <h2>All Categories</h2>
-    <div class="category-grid">
-      <div class="category-card"><div class="icon">💻</div><p>Laptops</p></div>
-      <div class="category-card"><div class="icon">📱</div><p>Mobiles</p></div>
-      <div class="category-card"><div class="icon">🎧</div><p>Headphones</p></div>
-      <div class="category-card"><div class="icon">👗</div><p>Dresses</p></div>
-      <div class="category-card"><div class="icon">📷</div><p>Cameras</p></div>
-      <div class="category-card"><div class="icon">📺</div><p>Televisions</p></div>
-      <div class="category-card"><div class="icon">⌚</div><p>Watches</p></div>
-      <div class="category-card"><div class="icon">👕</div><p>Shirts</p></div>
-      <div class="category-card"><div class="icon">👟</div><p>Shoes</p></div>
-      <div class="category-card"><div class="icon">🏠</div><p>Home</p></div>
-      <div class="category-card"><div class="icon">💍</div><p>Jewellery</p></div>
+    <section class="categories">
+    <div class="cat-grid">
+    <div class="cat-card" onclick="selectCategory('Electronics')">
+      <div class="cat-icon">📱</div>
+      <div class="cat-name">Electronics</div>
+      <div class="cat-count">240K+ products</div>
+      <div class="cat-sub"><span>Phones</span><span>Laptops</span><span>TVs</span></div>
     </div>
-  </section>
+    <div class="cat-card" onclick="selectCategory('Men\'s Fashion')">
+      <div class="cat-icon">👔</div>
+      <div class="cat-name">Men's Clothing</div>
+      <div class="cat-count">180K+ products</div>
+      <div class="cat-sub"><span>Shirts</span><span>Jeans</span><span>Formals</span></div>
+    </div>
+    <div class="cat-card" onclick="selectCategory('Women\'s Fashion')">
+      <div class="cat-icon">👗</div>
+      <div class="cat-name">Women's Clothing</div>
+      <div class="cat-count">210K+ products</div>
+      <div class="cat-sub"><span>Sarees</span><span>Tops</span><span>Dresses</span></div>
+    </div>
+    <div class="cat-card" onclick="selectCategory('Accessories')">
+      <div class="cat-icon">💍</div>
+      <div class="cat-name">Accessories</div>
+      <div class="cat-count">130K+ products</div>
+      <div class="cat-sub"><span>Watches</span><span>Bags</span><span>Belts</span></div>
+    </div>
+    </div>
 
+    </section>
+    
   <footer>
     <div class="footer-brand">
       <h3>BuyWise</h3>

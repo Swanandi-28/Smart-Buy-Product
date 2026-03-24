@@ -234,7 +234,7 @@ a {
 
 .categories-section h2 {
   text-align: center;
-  font-size: 22px;
+  font-size: 35px;
   font-weight: 600;
   letter-spacing: -0.2px;
   margin-bottom: var(--space-4);
@@ -246,7 +246,10 @@ a {
   flex-wrap: wrap;
   gap: var(--space-2);
 }
-
+.category-grid :hover{
+  border-color: var(--border-subtle) ;
+  box-shadow: 0 16px 40px rgba(108,99,255,0.12);
+}
 .category-card {
   background: var(--bg-card);
   padding: var(--space-3) var(--space-2);
@@ -260,7 +263,7 @@ a {
 
 .category-card:hover {
   border-color: var(--border-subtle);
-  background: #132030;
+  background: #131031;
 }
 
 .category-card .icon {
@@ -276,6 +279,64 @@ a {
   font-weight: 500;
 }
 
+.categories {
+   background: var(--surface); 
+ }
+.cat-grid { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 40px; 
+  max-width: 1000px;
+  margin: auto;
+  }
+.cat-card {
+    background: var(--bg); 
+    border: 1px solid var(--border); 
+    border-radius: var(--card-radius);
+    padding: 28px 20px; cursor: pointer; 
+    transition: var(--transition);
+    display: flex; flex-direction: column; 
+    align-items: center; 
+    gap: 14px; text-align: center;
+    position: relative; 
+    overflow: hidden;
+  }
+.cat-card::before {
+    content: ''; position: absolute; inset: 0;
+    opacity: 0; transition: var(--transition);
+    background: linear-gradient(135deg, rgba(29, 27, 65, 0.08), transparent);
+}
+.cat-card:hover {
+   border-color: var(--accent); 
+   transform: translateY(-4px); 
+   box-shadow: 0 16px 40px rgba(108,99,255,0.12); }
+.cat-card:hover::before { 
+  opacity: 1; 
+}
+.cat-icon {
+   font-size: 2.4rem; 
+  }
+.cat-name { 
+  font-family: 'Syne', sans-serif;
+  font-weight: 700; 
+  font-size: 0.95rem; }
+.cat-count { 
+  font-size: 0.78rem; 
+  color: var(--text-muted); }
+.cat-sub { 
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 6px; justify-content: center;
+  margin-top: 4px; }
+.cat-sub span {
+    font-size: 0.7rem; 
+    padding: 3px 10px; 
+    border-radius: 999px;
+    background: var(--surface2); 
+    color: var(--text-muted); 
+    border: 1px solid var(--border);
+  }
+
 
 /* ============================================
    Price Comparison Table
@@ -287,7 +348,7 @@ a {
 
 .price-section h2 {
   text-align: center;
-  font-size: 22px;
+  font-size: 35px;
   font-weight: 600;
   letter-spacing: -0.2px;
   margin-bottom: var(--space-4);
@@ -397,7 +458,7 @@ td:first-child {
 }
 
 .how-it-works h2 {
-  font-size: 22px;
+  font-size: 35px;
   font-weight: 600;
   letter-spacing: -0.2px;
   margin-bottom: var(--space-5);
@@ -458,7 +519,7 @@ td:first-child {
 }
 
 .why-section h2 {
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 600;
   letter-spacing: -0.2px;
   margin-bottom: var(--space-4);
